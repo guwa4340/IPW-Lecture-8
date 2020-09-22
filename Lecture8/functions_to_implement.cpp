@@ -120,7 +120,12 @@ std::vector<int> AddN(std::vector<int> v, int n){
 }
 
 // adds n to each element of the vector
-std::vector<double> AddN(std::vector<double> v, double n);
+std::vector<double> AddN(std::vector<double> v, double n){
+    for (int i=0;i<(double)v.size();i++){
+        v[i]+=n;
+    }
+    return v;
+}
 
 // adds n to each element of the vector
 std::vector<std::string> AddN(std::vector<std::string> v, std::string n);
